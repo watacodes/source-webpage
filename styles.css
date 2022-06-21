@@ -18,6 +18,19 @@ header {
     width: 100vw;
 }
 
+.dropdown-container {
+    display: none;
+}
+
+.dd1,
+.dd2,
+.dd3 {
+    background: rgba(34, 34, 80, 0.507);
+    width: 30px;
+    padding: 2px;
+    margin: 4px;
+}
+
 nav {
     display: flex;
     width: 100vw;
@@ -183,9 +196,156 @@ h3 + p {
 /* Media query */
 
 @media screen and (max-width: 600px) {
+
+    html {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
     .header-list,
     .header-button {
         display: none;
     }
 
+    .dropdown-container {
+        display: block;
+        width: 10vw;
+    }
+
+    .website-logo {
+        width: 90vw;
+        text-align: center;
+        margin-right: 10%;
+    }
+
+    nav {
+        width: 100vw;
+    }
+
+    .section1 {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column wrap;
+        height: 100vh;
+    }
+
+    .main-left {
+        width: 100vw;
+        height: 60%;
+    }
+    
+    .main-right {
+        width: 100vw !important;
+        height: 40%; 
+        padding: 0 5%;
+    }
+
+    .text-wrapper {
+        width: 90vw;
+        margin: 0;
+        padding: 0 5%;
+    }
+
+    .text-wrapper-adjust {
+        width: 90vw;
+
+    }
+
+    .image-wrapper {
+        width: 90vw;
+        height: 100%;
+    }
+
+    .main-image {
+        width: 80%;
+        height: 80%;
+    }
+    
+    .section2 {
+        margin: 0;
+        padding: 0 5%;
+        width: 100vw;
+        background: rgba(226, 232, 250, 0.555);
+    }
+
+    .feature-wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    .section3 {
+        width: 100vw;
+        margin: 0;
+        padding: 20px 5%;
+    }
+
+    .text-wrapper3 > h2 {
+        margin: 0;
+        padding: 0;
+        width: 90vw;
+        font-size: 1.8rem;
+    }
+
+    .text-wrapper3 > h2 + p {
+        padding: 10px 0;
+        width: 90vw;
+    }
+    
+    .input-container {
+        width: 90vw;
+    }
+    
+    .text-wrapper p {
+        width: 90vw;
+        height: 20vh;
+        word-wrap: wrap;
+        
+    }
+
+    .input-text,
+    .input-button {
+        width: 90vw;
+    }
+
+    .input-text {
+        margin-bottom: 10px;
+    }
+
+    .feature-wrapper section {
+        width: 90vw;
+        padding-right: 5%;
+        margin: 0;   
+        word-wrap: wrap;
+    }
+
+    .icon1,
+    .icon2,
+    .icon3,
+    .icon4 {
+        margin: 12px 0;
+    }
+
+    .feature-wrapper section h3 {
+        margin-bottom: 10px;
+        line-height: normal;
+    }
+
+    .feature-wrapper section h3 + p {
+        margin-bottom: 20px;
+    }
+
+    .section-links {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    
 }
